@@ -80,9 +80,8 @@ MEDIA_URL = "/media/"
 MEDIA_ROOT = os.path.join(DATA_DIR, "media")
 STATIC_ROOT = os.path.join(DATA_DIR, "static")
 
-STATICFILES_DIRS = (os.path.join(BASE_DIR, "mysite", "static"),)
+STATICFILES_DIRS = (os.path.join(BASE_DIR, "staticfiles"),)
 SITE_ID = 1
-
 
 TEMPLATES = [
     {
@@ -90,6 +89,7 @@ TEMPLATES = [
         "DIRS": [os.path.join(BASE_DIR, "mysite", "templates"),],
         "OPTIONS": {
             "context_processors": [
+                "mysite.modules.context_processors.site",
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
                 "django.template.context_processors.i18n",
