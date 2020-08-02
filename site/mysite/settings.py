@@ -215,7 +215,7 @@ CMS_PLACEHOLDER_CONF = {}
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.mysql",
-        "NAME": "apostillasargentina_cms",
+        "NAME": "djangocms_cleanblog",
         "USER": "dev",
         "PASSWORD": "dev",
         "CONN_MAX_AGE": 0,
