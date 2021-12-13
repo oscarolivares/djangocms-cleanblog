@@ -40,7 +40,7 @@ djangocms-text-ckeditor==3.9.1
 djangocms-video==2.3.0
 easy-thumbnails==2.7
 html5lib==1.1
-lxml==4.5.2
+lxml==4.6.5
 mysqlclient==2.0.1
 pathspec==0.8.0
 Pillow==7.2.0
